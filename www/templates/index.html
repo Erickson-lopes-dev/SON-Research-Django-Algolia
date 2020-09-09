@@ -6,10 +6,9 @@
 </head>
 <body>
     <h1>Hello world</h1>
-    {% for item in content %}
-    <ul>
-        <li>{{ item.title }}</li>
-    </ul>
+    {% for post in content %}
+        <h3><a href="{% url 'show' post.id %}">{{ post.title }}</a></h3>
+        <p>{{ post.content }}</p>
     {% endfor %}
 </body>
 </html>

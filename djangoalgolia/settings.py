@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.algoliasearch',
     'www',
-    'autofixture'
+    'autofixture',
+
 ]
 
 MIDDLEWARE = [
@@ -120,3 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ALGOLIA = {
+    'APPLICATION_ID': '9X34MXP5G5',
+    'API_KEY': '31d5f76b4ceba09771e31e29e673994a'
+}
